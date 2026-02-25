@@ -14,6 +14,7 @@
 
 ## 📚 Índice
 - [Wireframe](#-wireframe)
+- [Protótipo](#-protótipo)
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Funcionalidades](#-funcionalidades)
 - [Autores](#-autores)
@@ -29,6 +30,19 @@
 
 - 🎨 Figma: https://www.figma.com/design/FGR596awWqFuYUBk3jcczj/Portfolio
 
+---
+
+## 📷 Protótipo
+
+- **Home:**  
+  ![Home](artefatos/imagens/home.png)
+
+- **Sobre:**  
+  ![Sobre](artefatos/imagens/sobre.png)
+
+- **Projetos:**  
+  ![Projetos](artefatos/imagens/projetos.png)
+  
 ---
 
 ## 📝 Sobre o Projeto
