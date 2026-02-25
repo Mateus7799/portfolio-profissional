@@ -7,9 +7,21 @@ function Footer() {
         <div className="footer-content">
           <div className="contact-info">
             <h3>Contato</h3>
-            <p>seuemail@exemplo.com</p>
-            <p>+55 (00) 1234-5678</p>
+            <p>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=peuaze@gmail.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+                peuaze@gmail.com
+                 </a>
+            </p>
+            <p>
+              <a href="https://wa.me/5531992903740" target="_blank" rel="noopener noreferrer">
+                +55 (31) 99290-3740
+              </a>
+            </p>
           </div>
+
           <div className="social-links">
             <h3>Redes Sociais</h3>
             <div className="social-icons">
@@ -19,7 +31,6 @@ function Footer() {
             </div>
           </div>
         </div>
-        
       </div>
     </footer>
   );

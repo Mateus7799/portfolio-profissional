@@ -1,4 +1,6 @@
 import './Sobre.css';
+//import foto from '../assets/user.png';
+
 
 function Sobre() {
   const skills = [
@@ -12,7 +14,8 @@ function Sobre() {
         <div className="about-content">
           <div className="photo-section">
             <div className="photo-placeholder">
-              <span>Sua Foto</span>
+             {/* <img src={foto} alt="Foto do autor" className="photo" /> */}
+             <span>Sua Foto</span>
             </div>
           </div>
 

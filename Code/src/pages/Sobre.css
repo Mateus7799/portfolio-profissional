@@ -115,3 +115,9 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* deixa redonda */
+  object-fit: cover;
+}
