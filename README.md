@@ -1,7 +1,6 @@
 # 🏷️ Portfólio Profissional 
 
-> [!NOTE]
-> Projeto acadêmico desenvolvido para a disciplina de **Laboratório de Desenvolvimento de Software**, com o objetivo de criar um portfólio profissional web reutilizável e adaptável para diferentes integrantes do grupo.
+> Projeto acadêmico desenvolvido para a disciplina de **Laboratório de Desenvolvimento de Software**, com o objetivo de criar um portfólio web reutilizável.
 
 ---
 
@@ -14,37 +13,27 @@
 ---
 
 ## 📚 Índice
-- [Links Úteis](#-links-úteis)
-- [Sobre o Projeto](#-sobre-o-projeto)
+- [Wireframe](#-wireframe)
+- [Sobre o Projeto](#sobre-o-projeto)
 - [Funcionalidades](#-funcionalidades)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Autores](#-autores)
+- [Tecnologias Utilizadas](#-tecnologias)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Estrutura das Páginas](#-estrutura-das-páginas)
 - [Como Executar](#-como-executar)
-- [Autores](#-autores)
+
 
 ---
 
-## 🔗 Links Úteis
+## 🔗 Wireframe
 
-- 🎨 **Wireframes (Figma):**  
-  https://www.figma.com/design/FGR596awWqFuYUBk3jcczj/Portfolio?node-id=0-1&t=qpuVStprvWKgAPAK-1
+- 🎨 Figma: https://www.figma.com/design/FGR596awWqFuYUBk3jcczj/Portfolio
 
 ---
 
 ## 📝 Sobre o Projeto
 
-Este projeto consiste no desenvolvimento de um **portfólio profissional web**, com foco na organização, navegação e apresentação de informações.
-
-A aplicação foi desenvolvida como parte da disciplina de laboratório, com o objetivo de aplicar conceitos de desenvolvimento web, como:
-
-- Estruturação de páginas  
-- Navegação entre seções  
-- Organização de layout  
-
-Além disso, o projeto foi pensado como uma **base reutilizável**, permitindo que diferentes usuários adaptem o conteúdo conforme suas necessidades.
-
-Atualmente, o projeto representa um **protótipo funcional**, com foco na estrutura e não no conteúdo final.
+Aplicação web desenvolvida para apresentar informações profissionais de forma organizada, com navegação entre páginas e estrutura reutilizável para diferentes usuários.
 
 ---
 
@@ -57,6 +46,7 @@ Atualmente, o projeto representa um **protótipo funcional**, com foco na estrut
 - 🔗 Links para repositórios  
 - 📩 Área de contato (estrutura inicial)  
 - 📄 Header e Footer padronizados  
+
 ---
 
 ## 👨‍💻 Autores
@@ -65,16 +55,12 @@ Atualmente, o projeto representa um **protótipo funcional**, com foco na estrut
   
 ---
 
+## 🛠 Tecnologias
 
-## 🛠 Tecnologias Utilizadas
-
-### 💻 Front-end
-- **HTML5** → Estrutura base da aplicação  
-- **CSS3** → Estilização e layout responsivo (Flexbox e Grid)  
-- **JavaScript (ES6+)** → Lógica e interatividade  
-- **React** → Criação de componentes reutilizáveis e organização da interface  
-- **React Router DOM** → Navegação entre páginas sem recarregar (SPA)  
-- **Vite** → Ferramenta de build e servidor de desenvolvimento rápido  
+- HTML, CSS, JavaScript  
+- React  
+- React Router  
+- Vite 
 
 ---
 
@@ -105,49 +91,11 @@ projeto/
 │   ├── App.css               # Estilos da aplicação
 │   ├── main.jsx              # Ponto de entrada React
 │   └── index.css             # Estilos globais
+├── eslint.config.js          # Configuração do ESLint (qualidade do código)
 ├── index.html                # Template HTML principal
 ├── package.json              # Dependências do projeto
-├── vite.config.js            # Configuração do Vite
-└── eslint.config.js          # Configuração do ESLint (qualidade do código)
+└── vite.config.js            # Configuração do Vite
 ```
-
-
-### Organização:
-
-- **components/** → Elementos reutilizados em várias páginas (ex: Header e Footer)  
-- **pages/** → Cada página principal do sistema  
-- **Layout** → Define a estrutura base com Header + conteúdo + Footer  
-
-
-## ⚙️ Funcionamento do Sistema
-
-O projeto é estruturado como uma **Single Page Application (SPA)**, onde a navegação entre páginas ocorre sem recarregar o navegador.
-
-### Organização dos Componentes
-
-A aplicação segue uma estrutura em camadas:
-
-- **App.jsx** → Define as rotas da aplicação  
-- **Layout.jsx** → Estrutura padrão (Header + conteúdo + Footer)  
-- **Pages** → Conteúdo específico de cada rota  
-
-### Navegação
-
-A navegação é feita com **React Router**, utilizando componentes como `Link` e `Route`.
-
-Ao clicar em um link:
-- A URL é atualizada  
-- O React renderiza apenas o conteúdo da página correspondente  
-- O Header e Footer permanecem fixos  
-
-### Renderização Dinâmica
-
-Alguns elementos são gerados dinamicamente com `.map()`, como:
-- Lista de habilidades  
-- Cards de projetos  
-
-Isso permite reutilizar estrutura e facilitar manutenção do código.
----
 
 ## 📐 Estrutura das Páginas
 
@@ -164,3 +112,6 @@ Isso permite reutilizar estrutura e facilitar manutenção do código.
 ```bash
 npm install
 npm run dev
+```
+
+
