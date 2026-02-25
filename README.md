@@ -35,13 +35,13 @@
 ## 📷 Protótipo
 
 - **Home:**  
-  ![Home](artefatos/imagens/home.png)
+  ![Home](Artefatos/Imagens/home-prototipo.png)
 
 - **Sobre:**  
-  ![Sobre](artefatos/imagens/sobre.png)
+  ![Sobre](Artefatos/Imagens/sobre-prototipo.png)
 
 - **Projetos:**  
-  ![Projetos](artefatos/imagens/projetos.png)
+  ![Projetos](Artefatos/Imagens/projetos-prototipo.png)
   
 ---
 
