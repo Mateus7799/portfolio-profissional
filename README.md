@@ -65,7 +65,10 @@ Aplicação web desenvolvida para apresentar informações profissionais de form
 
 ## 👨‍💻 Autores
 
+- Arthur Modesto Couto
+- Bernardo Carvalho Denucci Mercado
 - Mateus Azevedo Araújo
+- Matheus Dias Mendes
   
 ---
 
