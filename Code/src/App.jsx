@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Projetos from './pages/Projetos';
 import PDF from './pages/PDF';
+import Contato from './pages/Contato';
 import './assets/css/App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="projetos" element={<Projetos />} />
+          <Route path="contato" element={<Contato />} />
           <Route path="pdf" element={<PDF />} />
         </Route>
       </Routes>
