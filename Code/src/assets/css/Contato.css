@@ -85,6 +85,13 @@
   box-shadow: 0 6px 18px rgba(100, 108, 255, 0.3);
 }
 
+.form-status {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #646cff;
+}
+
 @media (max-width: 768px) {
   .contact-card {
     padding: 1.5rem;
