@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../assets/css/Home.css";
 
 function Home() {
+  const { t, i18n } = useTranslation();
   return (
     <div className="home">
       <div className="hero-section">
-        <h1 className="hero-title">Olá, eu sou [Nome do Autor]</h1>
+        <h1 className="hero-title">{t("titulo-home")}</h1>
         <p className="hero-description">
-          Este é um portfólio acadêmico desenvolvido para apresentar projetos,
-          habilidades e experiências adquiridas ao longo da formação em
-          Engenharia de Software.
+          {t("assunto-home")}
         </p>
         <Link to="/sobre" className="cta-button">
-          Sobre Mim
+          {t("butao-sobremim")}
         </Link>
       </div>
     </div>

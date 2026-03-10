@@ -26,25 +26,17 @@ function Sobre() {
 
           <div className="info-section">
             <div className="language-section">
-              <h2>{t("titulo")}</h2>
-              <p>{t("sobre")}</p>
+              <h2>{t("titulo-sobremim")}</h2>
+              <p>{t("assunto-sobremim")}</p>
               <div className="language-buttons">
-                <button className="language-button" onClick={() => i18n.changeLanguage("pt")}>
-                  Português
-                </button>
-                <button className="language-button" onClick={() => i18n.changeLanguage("en")}>
-                  English
-                </button>
               </div>
             </div>
           </div>
         </div>
 
         <div className="skills-section">
-          <h2>Habilidades</h2>
-          <p style={{ textAlign: 'center' }}>Lista de tecnologias, ferramentas e competências desenvolvidas durante a formação acadêmica e projetos realizados.
-
-          </p>
+          <h2>{t("habilidade")}</h2>
+          <p style={{ textAlign: 'center' }}>{t("habilidade-descricao")}</p>
           <div className="skills-grid">
             {skills.map((skill, index) => (
               <div key={index} className="skill-item">
@@ -60,7 +52,7 @@ function Sobre() {
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                   </svg>
-                  <span>Ver Meus Projetos</span>
+                  <span>{t("ver_projetos-descricao")}</span>
                 </Link>
                 <Link to="/pdf" className="cta-button">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

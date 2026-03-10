@@ -1,37 +1,36 @@
 import '../assets/css/Experiencias.css';
+import { useTranslation } from "react-i18next";
 
 function Experiencias() {
+  const { t, i18n } = useTranslation();
   const experiencias = [
     {
       id: 1,
-      empresa: "Empresa Exemplo",
-      cargo: "Desenvolvedor Full Stack",
-      periodo: "Jan 2024 - Atual",
-      descricao:
-        "Atuação no desenvolvimento de aplicações web utilizando React, Laravel e integração com APIs REST. Participação ativa em decisões de arquitetura e melhoria de performance.",
+      empresa: t("empresa-experiencias"),
+      cargo: t("cargo-experiencias"),
+      periodo: t("periodo-experiencias"),
+      descricao: t("descricao-experiencia"),
     },
     {
       id: 2,
-      empresa: "Startup Tech",
-      cargo: "Estagiário em Desenvolvimento",
-      periodo: "Ago 2023 - Dez 2023",
-      descricao:
-        "Desenvolvimento de funcionalidades frontend com React e manutenção de backend em Node.js. Colaboração em ambiente ágil utilizando Scrum.",
+      empresa: t("empresa-experiencias2"),
+      cargo: t("cargo-experiencias2"),
+      periodo: t("periodo-experiencias2"),
+      descricao: t("descricao-experiencia2"),
     },
     {
       id: 3,
-      empresa: "Projeto Open Source",
-      cargo: "Colaborador",
-      periodo: "2023",
-      descricao:
-        "Contribuição com correções de bugs e melhorias de documentação em projeto open source no GitHub.",
+      empresa: t("empresa-experiencias3"),
+      cargo: t("cargo-experiencias3"),
+      periodo: t("periodo-experiencias3"),
+      descricao: t("descricao-experiencia3"),
     },
   ];
 
   return (
     <div className="experiencias">
       <div className="container">
-        <h1 className="page-title">Experiências</h1>
+        <h1 className="page-title">{t("experiencias")}</h1>
 
         <div className="experience-grid">
           {experiencias.map((exp) => (
