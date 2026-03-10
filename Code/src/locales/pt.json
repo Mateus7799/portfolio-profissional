@@ -1,5 +1,24 @@
 {
-  "titulo": "Português",
-  "sobre": "Este espaço é destinado à apresentação do autor, incluindo sua formação, interesses na área de tecnologia e experiências adquiridas ao longo do curso",
-  "sobreMim": "Sobre Mim"
+  "titulo-home": "Olá, eu sou [Nome do Autor]",
+  "assunto-home": "Este é um portfólio acadêmico desenvolvido para apresentar projetos, habilidades e experiências adquiridas ao longo da formação em Engenharia de Software.",
+  "butao-sobremim": "Sobre mim",
+
+  "titulo-sobremim": "Português",
+  "assunto-sobremim": "Este espaço é destinado à apresentação do autor, incluindo sua formação, interesses na área de tecnologia e experiências adquiridas ao longo do curso",
+
+  "habilidade": "Habilidades",
+  "habilidade-descricao": "Lista de tecnologias, ferramentas e competências desenvolvidas durante a formação acadêmica e projetos realizados",
+  "ver-projetos":"Ver meus Projetos",
+
+  "experiencias": "Experiências",
+  "empresa": "Empresa Exemplo",
+  "cargo": "Cargo Exemplo",
+  "periodo": "Jan 2024 - Atual",
+  "descricao-experiencia": "Descrição breve das responsabilidades e conquistas durante a experiência profissional, destacando habilidades aplicadas e resultados alcançados.",
+
+  "projetos": "Meus Projetos",
+  "nome-projeto": "Projeto de Desenvolvimento Web",
+  "descricao-projeto": "Descrição breve do projeto, destacando os objetivos, tecnologias utilizadas e resultados alcançados. Este projeto envolveu o desenvolvimento de uma aplicação web utilizando React e Node.js, com foco em desempenho e usabilidade.",
+  "linguaem-projeto": "Linguagens e Tecnologias: React, Node.js, Express, MongoDB",
+  "ver-projeto": "Ver no GitHub"
 }
