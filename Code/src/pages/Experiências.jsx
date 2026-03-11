@@ -1,18 +1,26 @@
 import '../assets/css/Experiencias.css';
-import { experienciasData } from "../data/experienciasData";
 import { useTranslation } from "react-i18next";
 
 function Experiencias() {
 
   const { t } = useTranslation();
 
-  const experiencias = experienciasData.map(exp => ({
-    ...exp,
-    empresa: t(exp.empresa),
-    cargo: t(exp.cargo),
-    periodo: t(exp.periodo),
-    descricao: t(exp.descricao)
-  }));
+  const experiencias = [
+    {
+      id: 1,
+      empresa: t("empresa-experiencias1"),
+      cargo: t("cargo-experiencias1"),
+      periodo: t("periodo-experiencias1"),
+      descricao: t("descricao-experiencia1")
+    },
+    {
+      id: 2,
+      empresa: t("empresa-experiencias2"),
+      cargo: t("cargo-experiencias2"),
+      periodo: t("periodo-experiencias2"),
+      descricao: t("descricao-experiencia2")
+    }
+  ];
 
   return (
     <div className="experiencias">

@@ -1,36 +1,45 @@
 {
-  "titulo-home": "Olá, eu sou [Nome do Autor]",
-  "assunto-home": "Este é um portfólio acadêmico desenvolvido para apresentar projetos, habilidades e experiências adquiridas ao longo da formação em Engenharia de Software.",
+  
+  "titulo-home": "Olá, eu sou Mateus Azevedo Araujo",
+  "assunto-home": "Sou estudante de Engenharia de Software, interessado no desenvolvimento de sistemas e aplicações web. Este portfólio apresenta alguns projetos, habilidades e experiências adquiridas ao longo da minha formação.\n\nMeu objetivo é aplicar conhecimentos de forma prática e aprimorar continuamente minhas competências em tecnologias modernas de desenvolvimento de software.",
   "butao-sobremim": "Sobre mim",
 
-  "titulo-sobremim": "Português",
-  "assunto-sobremim": "Este espaço é destinado à apresentação do autor, incluindo sua formação, interesses na área de tecnologia e experiências adquiridas ao longo do curso",
+  "titulo-sobremim": "Sobre mim",
+  "assunto-sobremim": "Sou estudante de Engenharia de Software na PUC Minas, com foco no desenvolvimento de soluções tecnológicas eficientes e inovadoras. Ao longo da minha formação, venho consolidando conhecimentos em programação, documentação de projetos, banco de dados e desenvolvimento web, utilizando tecnologias como Java, HTML, CSS, entre outras.\n\nParticipei de diversos projetos acadêmicos voltados à criação de sistemas e aplicações, o que me permitiu aprimorar habilidades analíticas, resolução de problemas e atenção aos detalhes. Busco constantemente ampliar meu conhecimento em novas ferramentas e metodologias para contribuir com soluções estruturadas e de qualidade no desenvolvimento de software.",
 
   "habilidade": "Habilidades",
   "habilidade-descricao": "Lista de tecnologias, ferramentas e competências desenvolvidas durante a formação acadêmica e projetos realizados",
   "ver_projetos-descricao":"Ver meus Projetos",
 
   "experiencias": "Experiências",
-  "empresa-experiencias": "Empresa Exemplo",
-  "cargo-experiencias": "Cargo Exemplo",
-  "periodo-experiencias": "Jan 2024 - Atual",
-  "descricao-experiencia": "Descrição breve das responsabilidades e conquistas durante a experiência profissional, destacando habilidades aplicadas e resultados alcançados.",
 
-  "empresa-experiencias2": "Empresa Exemplo",
-  "cargo-experiencias2": "Cargo Exemplo",
-  "periodo-experiencias2": "Jan 2024 - Atual",
-  "descricao-experiencia2": "Descrição breve das responsabilidades e conquistas durante a experiência profissional, destacando habilidades aplicadas e resultados alcançados.",
+   "empresa-experiencias1": "Sete",
+   "cargo-experiencias1": "Auxiliar Financeiro-Administrativo",
+   "periodo-experiencias1": "jan 2024 - out 2024",
+   "descricao-experiencia1": "Atuação de apoio às rotinas administrativas e financeiras, colaborando na organização de documentos e no acompanhamento de pagamentos. A experiência proporcionou desenvolvimento de habilidades de organização, atenção aos detalhes e controle de informações.",
 
-  "empresa-experiencias3": "Empresa Exemplo",
-  "cargo-experiencias3": "Cargo Exemplo",
-  "periodo-experiencias3": "Jan 2024 - Atual",
-  "descricao-experiencia3": "Descrição breve das responsabilidades e conquistas durante a experiência profissional, destacando habilidades aplicadas e resultados alcançados.",
+    
+   "empresa-experiencias2": "Axis Alfa",
+   "cargo-experiencias2": "Assistente Financeiro-Administrativo",
+   "periodo-experiencias2": "out 2024 - Atual",
+   "descricao-experiencia2": "Responsável por atividades administrativas e financeiras, incluindo organização de documentos, controle de contas a pagar e acompanhamento do fluxo de caixa. A função contribuiu para o aprimoramento de habilidades de análise, organização e gestão de informações.",
+  
 
   "projetos": "Meus Projetos",
-  "nome-projeto": "Projeto de Desenvolvimento Web",
-  "descricao-projeto": "Descrição breve do projeto, destacando os objetivos, tecnologias utilizadas e resultados alcançados. Este projeto envolveu o desenvolvimento de uma aplicação web utilizando React e Node.js, com foco em desempenho e usabilidade.",
-  "linguaem-projeto": "Linguagens e Tecnologias: React, Node.js, Express, MongoDB",
-  "ver-projeto": "Ver no GitHub",
+  
+  "projeto1-nome": "Gerenciador financeiro",
+  "projeto1-descricao": "Aplicativo para gerenciar gastos, permitindo categorizar o orçamento em potes como faculdade, transporte, alimentação e casa, incentivando um controle financeiro eficiente e saudável.",
+
+  "projeto2-nome": "VazTech - Sistema de Gestão Comercial",
+  "projeto2-descricao": "VazTech é uma aplicação de gestão comercial para lojas de produtos Apple, automatizando compras, vendas, estoque, serviços, clientes e finanças. Desenvolvida com Angular (front-end) e Spring Boot (back-end), utiliza autenticação JWT e banco de dados Azure SQL Server.",
+
+  "projeto3-nome": "Portfólio Profissional",
+  "projeto3-descricao": "Projeto acadêmico desenvolvido para a disciplina de Laboratório de Desenvolvimento de Software, com o objetivo de criar um portfólio web reutilizável.",
+
+  "projeto4-nome": "Entendendo o Código: A Influência da Documentação na Compreensão de Software",
+  "projeto4-descricao": "Estudo acadêmico sobre o impacto da documentação de software na compreensão de código. Foram analisados códigos reais do GitHub por estudantes com e sem acesso à documentação, mostrando que a ausência de documentação aumenta erros e o tempo de análise. Palavras-chave: Documentação, Compreensão de Código, Engenharia de Software.",
+
+  "ver-projeto": "Ver meu projeto",
 
   "contato": "Contato",
   "nome-contato": "Nome",

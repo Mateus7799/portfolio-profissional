@@ -1,13 +1,18 @@
 import "../assets/css/Sobre.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import foto from "../assets/img/user.png";
+import foto from "../assets/img/user1.jpeg";
 
 function Sobre() {
   const skills = [
+  'C',
+  'C++',
+  'Java',
   'JavaScript',
+  'HTML',
   'CSS',
-  'React'
+  'React',
+  'UML'
 ];
   const { t } = useTranslation();
 
@@ -20,16 +25,17 @@ function Sobre() {
           <div className="photo-section">
             <div className="photo-placeholder">
               <img src={foto} alt="Foto do autor" className="photo" /> 
-              <span>Sua Foto</span>
+
             </div>
           </div>
 
-          <div className="info-section">
-            <div className="language-section">
-              <h2>{t("titulo-sobremim")}</h2>
-              <p>{t("assunto-sobremim")}</p>
+          <div className="language-section">
+            <h2>{t("titulo-sobremim")}</h2>
+            {t("assunto-sobremim").split("\n\n").map((paragrafo, i) => (
+              <p key={i}>{paragrafo}</p>
+              ))}
               <div className="language-buttons">
-              </div>
+
             </div>
           </div>
         </div>

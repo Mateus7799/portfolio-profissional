@@ -1,33 +1,48 @@
 {
-  "titulo-home": "Hello, I am [Author Name]",
-  "assunto-home": "This is an academic portfolio developed to present projects, skills, and experiences acquired throughout the Software Engineering program.",
+ 
+  "titulo-home": "Hello, I am Mateus Azevedo Araujo",
+"assunto-home": "I am a Software Engineering student, interested in developing systems and web applications. This portfolio highlights some projects, skills, and experiences gained during my academic journey.\n\nMy goal is to apply knowledge in practice and continuously improve my skills in modern software development technologies.",
+
   "butao-sobremim": "About Me",
 
-  "titulo-sobremim": "English",
-  "assunto-sobremim": "This section is intended to present the author, including their education, interests in the technology field, and experiences acquired during the course.",
+  "titulo-sobremim": "About Me",
+  "assunto-sobremim": "I am a Software Engineering student at PUC Minas, with a focus on developing efficient and innovative technological solutions. Throughout my academic formation, I have been strengthening skills in programming, project documentation, databases, and web development, working with technologies such as Java, HTML, CSS, and others.\n\nI have participated in several academic projects focused on building systems and applications, which allowed me to enhance analytical skills, problem-solving abilities, and attention to detail. I am constantly seeking to expand my knowledge in new tools and methodologies to contribute with structured and high-quality solutions in software development.",
 
   "habilidade": "Skills",
   "habilidade-descricao": "List of technologies, tools, and competencies developed during academic training and completed projects.",
 
-  "ver_projetos-descricao": "View My Projects",
+  "projetos": "My Projects",
 
-  "experiencias": "Experiences",
-  "empresa-experiencias": "Example Company",
-  "cargo-experiencias": "Example Position",
-  "periodo-experiencias": "Jan 2024 - Present",
-  "descricao-experiencia": "Brief description of responsibilities and achievements during the professional experience, highlighting applied skills and accomplished results.",
+  "projeto1-nome": "Financial Manager",
+  "projeto1-descricao": "Application for managing expenses, allowing users to categorize budgets into pots such as college, transportation, food, and home, encouraging efficient and healthy financial control.",
 
-  "empresa-experiencias2": "Example Company",
-  "cargo-experiencias2": "Example Position",
-  "periodo-experiencias2": "Jan 2024 - Present",
-  "descricao-experiencia2": "Brief description of responsibilities and achievements during the professional experience, highlighting applied skills and accomplished results.",
+  "projeto2-nome": "VazTech - Commercial Management System",
+  "projeto2-descricao": "VazTech is a commercial management application for Apple product stores, automating purchases, sales, inventory, services, clients, and finances. Developed with Angular (front-end) and Spring Boot (back-end), it uses JWT authentication and Azure SQL Server.",
 
-  "empresa-experiencias3": "Example Company",
-  "cargo-experiencias3": "Example Position",
-  "periodo-experiencias3": "Jan 2024 - Present",
-  "descricao-experiencia3": "Brief description of responsibilities and achievements during the professional experience, highlighting applied skills and accomplished results.",
+  "projeto3-nome": "Professional Portfolio",
+  "projeto3-descricao": "Academic project developed for the Software Development Laboratory course, aiming to create a reusable web portfolio.",
+
+  "projeto4-nome": "Understanding Code: The Influence of Documentation on Software Comprehension",
+  "projeto4-descricao": "Academic study on the impact of software documentation on code comprehension. Real GitHub code was analyzed by students with and without access to documentation, demonstrating that lack of documentation increases errors and analysis time. Keywords: Documentation, Code Comprehension, Software Engineering.",
+
+  "ver-projeto": "View My Projects",
+
+  "empresa-experiencias1": "Sete",
+  "cargo-experiencias1": "Financial and Administrative Assistant",
+  "periodo-experiencias1": "Jan 2024 - Oct 2024",
+  "descricao-experiencia1": "Provided support for administrative and financial routines, assisting with document organization and payment monitoring. This experience helped develop skills such as organization, attention to detail, and information management.",
+
+  "empresa-experiencias2": "Axis Alfa",
+  "cargo-experiencias2": "Financial and Administrative Assistant",
+  "periodo-experiencias2": "Oct 2024 - Present",
+  "descricao-experiencia2": "Responsible for administrative and financial activities, including document organization, accounts payable control, and monitoring cash flow. The role contributed to strengthening skills in analysis, organization, and information management.",
+
 
   "projetos": "My Projects",
+  "nome-projeto": "Web Development Project",
+  "descricao-projeto": "Brief project description highlighting objectives, technologies used, and results achieved. This project involved developing a web application using React and Node.js, focusing on performance and usability.",
+  "linguaem-projeto": "Languages and Technologies: React, Node.js, Express, MongoDB",
+  "ver-projeto": "View Project",
 
   "contato": "Contact",
   "nome-contato": "Name",

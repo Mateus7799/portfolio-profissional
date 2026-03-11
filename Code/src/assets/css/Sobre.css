@@ -40,20 +40,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* garante que span e img fiquem empilhados */
+  flex-direction: column; 
   color: #666;
   font-size: 1.1rem;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .photo-placeholder .photo {
-  width: 150px; /* ou 200px se preferir */
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;  /* força centralização correta */
-  margin: 0 auto;  /* centraliza horizontalmente */
+  width: 100%;  
+  height: 100%;  
+  border-radius: 50%;  
+  object-fit: cover;   
+  display: block;
 }
+
 
 .info-section {
   display: flex;

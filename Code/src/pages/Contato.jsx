@@ -17,7 +17,6 @@ function Contato() {
 
     const time = new Date().toLocaleString("pt-BR");
 
-    // Email para você
     emailjs
       .send(
         EMAILJS_CONFIG.SERVICE_ID,
@@ -41,7 +40,6 @@ function Contato() {
         }
       );
 
-    // Email de confirmação para o remetente
     emailjs
       .send(
         EMAILJS_CONFIG.SERVICE_ID,

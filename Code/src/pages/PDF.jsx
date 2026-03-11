@@ -3,7 +3,7 @@ import { jsPDF } from 'jspdf';
 import { useTranslation } from 'react-i18next';
 import '../assets/css/PDF.css';
 import { portfolioData } from "../data/portfolioData";
-import { experienciasData } from "../data/experienciasData";
+import { projetosData } from "../data/projetosData";
 import foto from '../assets/img/user.png';
 
 function PDF() {
@@ -84,31 +84,45 @@ function PDF() {
       doc.setFont('Geocode', 'normal');
       doc.setFontSize(11);
 
-      experienciasData.forEach((exp) => {
-        if (yPosition > 230) {
-          doc.addPage();
-          yPosition = 20;
-        }
+      const experiencias = [
+  {
+    empresa: t("empresa-experiencias1", { lng: language }),
+    cargo: t("cargo-experiencias1", { lng: language }),
+    periodo: t("periodo-experiencias1", { lng: language }),
+    descricao: t("descricao-experiencia1", { lng: language })
+  },
+  {
+    empresa: t("empresa-experiencias2", { lng: language }),
+    cargo: t("cargo-experiencias2", { lng: language }),
+    periodo: t("periodo-experiencias2", { lng: language }),
+    descricao: t("descricao-experiencia2", { lng: language })
+  }
+];
 
-        const empresa = t(exp.empresa, { lng: language });
-        const cargo = t(exp.cargo, { lng: language });
-        const periodo = t(exp.periodo, { lng: language });
-        const descricao = t(exp.descricao, { lng: language });
+experiencias.forEach((exp) => {
+  if (yPosition > 230) {
+    doc.addPage();
+    yPosition = 20;
+  }
 
-        doc.setFont('Exo 2', 'bold');
-        doc.text(`${empresa}`, marginLeft, yPosition);
-        yPosition += 6;
+  const empresa = exp.empresa;
+  const cargo = exp.cargo;
+  const periodo = exp.periodo;
+  const descricao = exp.descricao;
 
-        doc.setFont('Geocode', 'italic');
-        doc.text(`${cargo} • ${periodo}`, marginLeft, yPosition);
-        yPosition += 6;
+  doc.setFont('Exo 2', 'bold');
+  doc.text(`${empresa}`, marginLeft, yPosition);
+  yPosition += 6;
 
-        doc.setFont('Geocode', 'normal');
-        const descLines = doc.splitTextToSize(descricao, contentWidth);
-        doc.text(descLines, marginLeft, yPosition);
-        yPosition += descLines.length * 6 + 10;
-      });
-
+  doc.setFont('Geocode', 'italic');
+  doc.text(`${cargo} • ${periodo}`, marginLeft, yPosition);
+  yPosition += 6;
+  
+  doc.setFont('Geocode', 'normal');
+  const descLines = doc.splitTextToSize(descricao, contentWidth);
+  doc.text(descLines, marginLeft, yPosition);
+  yPosition += descLines.length * 6 + 10;
+});
       if (yPosition > 240) {
         doc.addPage();
         yPosition = 20;
@@ -121,12 +135,7 @@ function PDF() {
       doc.text(projectsTitle, marginLeft, yPosition);
       yPosition += 12;
 
-      const response = await fetch("https://api.github.com/users/Mateus7799/repos");
-      const data = await response.json();
-      const projects = data
-        .filter(repo => !repo.fork)
-        .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-        .slice(0, 5);
+      const projects = projetosData;
 
       projects.forEach((project, index) => {
         if (yPosition > 230) {
@@ -136,27 +145,26 @@ function PDF() {
 
         doc.setFont('Exo 2', 'bold');
         doc.setFontSize(14);
-        doc.text(`${index + 1}. ${project.name}`, marginLeft, yPosition);
+        doc.text(`${index + 1}. ${project.nome}`, marginLeft, yPosition);
         yPosition += 8;
 
         doc.setFont('Geocode', 'normal');
         doc.setFontSize(10);
-        const desc = project.description || "Sem descrição";
+        const desc = project.descricao;
         const descLines = doc.splitTextToSize(desc, contentWidth);
         doc.text(descLines, marginLeft, yPosition);
         yPosition += descLines.length * 6 + 5;
 
         doc.setFont('Geocode', 'italic');
-        const tech = project.language || "N/A";
+        const tech = project.tecnologias.join(", ");
         doc.text(`Tecnologia: ${tech}`, marginLeft, yPosition);
         yPosition += 6;
 
-        // GitHub link sem cor azul
-        doc.textWithLink('GitHub', marginLeft, yPosition, { url: project.html_url });
+        doc.textWithLink('Link', marginLeft, yPosition, { url: project.link });
         yPosition += 12;
       });
 
-      // Data de geração
+
       const today = new Date();
       const formattedDate = language === 'en' ? today.toLocaleDateString('en-US') : today.toLocaleDateString('pt-BR');
       doc.setFont('Geocode', 'italic');
