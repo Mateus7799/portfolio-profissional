@@ -3,13 +3,14 @@ import { jsPDF } from 'jspdf';
 import { useTranslation } from 'react-i18next';
 import '../assets/css/PDF.css';
 import { portfolioData } from "../data/portfolioData";
+import { experienciasData } from "../data/experienciasData";
 import foto from '../assets/img/user.png';
 
 function PDF() {
   const [isGenerating, setIsGenerating] = useState(false);
   const { t } = useTranslation();
 
-  const generatePDF = (language = 'pt') => {
+  const generatePDF = async (language = 'pt') => {
     setIsGenerating(true);
 
     try {
@@ -42,7 +43,7 @@ function PDF() {
 
       doc.setFontSize(11);
       doc.setFont(undefined, 'normal');
-      const aboutText = portfolioData.about[language];
+      const aboutText = t("assunto-sobremim", { lng: language });
       const aboutLines = doc.splitTextToSize(aboutText, contentWidth);
       doc.text(aboutLines, marginLeft, yPosition);
       yPosition += aboutLines.length * 7 + 15;
@@ -71,17 +72,38 @@ function PDF() {
       }
 
       doc.setFontSize(16);
-      doc.setFont(undefined, 'bold');
-      const experienceTitle = language === 'en' ? 'Experiences' : 'Experiências';
-      doc.text(experienceTitle, marginLeft, yPosition);
-      yPosition += 10;
+doc.setFont(undefined, 'bold');
+const experienceTitle = language === 'en' ? 'Experiences' : 'Experiências';
+doc.text(experienceTitle, marginLeft, yPosition);
+yPosition += 10;
 
-      doc.setFontSize(11);
-      doc.setFont(undefined, 'normal');
-      const experienceText = portfolioData.experiences[language];
-      const experienceLines = doc.splitTextToSize(experienceText, contentWidth);
-      doc.text(experienceLines, marginLeft, yPosition);
-      yPosition += experienceLines.length * 7 + 20;
+doc.setFontSize(11);
+doc.setFont(undefined, 'normal');
+
+experienciasData.forEach((exp) => {
+  if (yPosition > 230) {
+    doc.addPage();
+    yPosition = 20;
+  }
+
+  const empresa = t(exp.empresa, { lng: language });
+  const cargo = t(exp.cargo, { lng: language });
+  const periodo = t(exp.periodo, { lng: language });
+  const descricao = t(exp.descricao, { lng: language });
+
+  doc.setFont(undefined, 'bold');
+  doc.text(`${empresa}`, marginLeft, yPosition);
+  yPosition += 6;
+
+  doc.setFont(undefined, 'italic');
+  doc.text(`${cargo} • ${periodo}`, marginLeft, yPosition);
+  yPosition += 6;
+
+  doc.setFont(undefined, 'normal');
+  const descLines = doc.splitTextToSize(descricao, contentWidth);
+  doc.text(descLines, marginLeft, yPosition);
+  yPosition += descLines.length * 6 + 10;
+});
 
       if (yPosition > 240) {
         doc.addPage();
@@ -96,38 +118,43 @@ function PDF() {
 
       
 
-      const projects = portfolioData.projects;
+      const response = await fetch("https://api.github.com/users/Mateus7799/repos");
+      const data = await response.json();
+      const projects = data
+      .filter(repo => !repo.fork)
+      .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+      .slice(0, 5);
 
       projects.forEach((project, index) => {
-        if (yPosition > 230) {
-          doc.addPage();
-          yPosition = 20;
-        }
+  if (yPosition > 230) {
+    doc.addPage();
+    yPosition = 20;
+  }
 
-        doc.setFontSize(14);
-        doc.setFont(undefined, 'bold');
-        doc.text(`${index + 1}. ${project.name[language]}`, marginLeft, yPosition);
-        yPosition += 8;
+  doc.setFontSize(14);
+  doc.setFont(undefined, 'bold');
+  doc.text(`${index + 1}. ${project.name}`, marginLeft, yPosition);
+  yPosition += 8;
 
-        doc.setFontSize(10);
-        doc.setFont(undefined, 'normal');
-        const descLines = doc.splitTextToSize(
-          project.description[language],
-          contentWidth
-        );
-        doc.text(descLines, marginLeft, yPosition);
-        yPosition += descLines.length * 6 + 5;
+  doc.setFontSize(10);
+  doc.setFont(undefined, 'normal');
 
-        doc.setFont(undefined, 'italic');
-        const techLabel = language === 'en' ? 'Technologies:' : 'Tecnologias:'; 
-        doc.text(`${techLabel} ${project.technologies.join(', ')}`, marginLeft, yPosition);
-        yPosition += 6;
+  const desc = project.description || "Sem descrição";
+  const descLines = doc.splitTextToSize(desc, contentWidth);
+  doc.text(descLines, marginLeft, yPosition);
+  yPosition += descLines.length * 6 + 5;
 
-        doc.setTextColor(0, 100, 200);
-        doc.textWithLink('GitHub', marginLeft, yPosition, { url: project.github });
-        doc.setTextColor(0, 0, 0);
-        yPosition += 12;
-      });
+  doc.setFont(undefined, 'italic');
+  const tech = project.language || "N/A";
+  doc.text(`Tecnologia: ${tech}`, marginLeft, yPosition);
+  yPosition += 6;
+
+  doc.setTextColor(0, 100, 200);
+  doc.textWithLink('GitHub', marginLeft, yPosition, { url: project.html_url });
+  doc.setTextColor(0, 0, 0);
+
+  yPosition += 12;
+});
 
       const today = new Date();
       const formattedDate = language === 'en' ? today.toLocaleDateString('en-US') : today.toLocaleDateString('pt-BR');
