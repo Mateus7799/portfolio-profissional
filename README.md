@@ -18,7 +18,7 @@
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Wireframe](#-wireframe)
 - [Protótipo](#-protótipo)
-- [Funcionalidades](#-funcionalidades)
+- [Funcionalidades](#-funcionalidades-principais)
 - [Autores](#-autores)
 - [Tecnologias Utilizadas](#-tecnologias)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
@@ -62,21 +62,22 @@ A aplicação apresenta uma estrutura moderna e reutilizável para exibição de
   
 ---
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades Principais
 
 - 🌐 **Visualização de Projetos:** Navegação por cards com descrições, tecnologias utilizadas e links para repositórios.  
 - 📄 **Documentação Integrada:** Instruções de instalação, execução e deploy diretamente no projeto.  
-- 🖌️ **Design Responsivo:** Layout adaptável para diferentes tamanhos de tela (desktop, tablet e mobile).  
+- 🖌️ **Design Responsivo:** Layout adaptável para desktop, tablet e mobile.  
 - ⚡ **Interatividade:** Transições suaves, animações e elementos dinâmicos para melhor experiência do usuário.  
 
+## ✨ Funcionalidades das Páginas 
+
 - 🏠 **Página Inicial:** Introdução ao autor e boas-vindas.  
-- 👤 **Sobre Mim:** Descrição detalhada sobre habilidades, trajetória e interesses.  
+- 👤 **Sobre Mim:** Detalhes sobre habilidades, trajetória e interesses.  
 - 💼 **Experiências:** Registro de experiências acadêmicas e profissionais.  
 - 🌍 **Idioma:** Opção de leitura em Português e Inglês.  
 - 💻 **Habilidades:** Exibição das principais competências técnicas.  
 - 📁 **Projetos:** Cards com detalhes, tecnologias e links para repositórios.  
-- 🔗 **Links Úteis:** Acesso direto a GitHub, Vercel e outros perfis.  
-- 📩 **Contato:** Área inicial para envio de mensagens via EmailJS.  
+- 📩 **Contato:** Área para envio de mensagens via EmailJS.  
 - 📄 **Header e Footer Padronizados:** Consistência visual em todas as páginas.
   
 ---
