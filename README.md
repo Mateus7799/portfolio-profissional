@@ -20,6 +20,7 @@
 - [Protótipo](#-protótipo)
 - [Funcionalidades](#-funcionalidades-principais)
 - [Autores](#-autores)
+- [Links dos Integrantes](#-links-dos-integrantes)
 - [Tecnologias Utilizadas](#-tecnologias)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Estrutura das Páginas](#-estrutura-das-páginas)
@@ -89,6 +90,21 @@ A aplicação apresenta uma estrutura moderna e reutilizável para exibição de
 - Mateus Azevedo Araújo
 - Matheus Dias Mendes
   
+---
+
+## 🔗 Links dos Integrantes
+
+- Arthur Modesto Couto
+  - [Acessar Portfólio](https://portfolio-arthurmodesto.vercel.app)
+- Bernardo Carvalho Denucci Mercado
+  - [Acessar Portfólio](https://portfolio-bernardocarvalho.vercel.app/)
+- Mateus Azevedo Araújo
+  - [Acessar Portfólio](https://portfolio-mateus-azevedo.vercel.app)
+- Matheus Dias Mendes
+  - [Acessar Portfólio](https://sitepessoal-roan.vercel.app)
+    
+ 
+     
 ---
 
 **Frontend:**
