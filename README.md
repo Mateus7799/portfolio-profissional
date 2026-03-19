@@ -6,10 +6,10 @@
 
 ## 🚧 Status do Projeto
 
-![Status](https://img.shields.io/badge/status-Finalizado-green)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![Versão](https://img.shields.io/badge/versão-0.4-blue)
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
-![Funcionalidades implementadas](https://img.shields.io/badge/funcionalidades-100%25-lightgrey)
+![Funcionalidades implementadas](https://img.shields.io/badge/funcionalidades-90%25-lightgrey)
 [![GitHub repo size](https://img.shields.io/github/repo-size/Mateus7799/portfolio-profissional?style=for-the-badge)](https://github.com/Mateus7799/portfolio-profissional)
 
 ---
